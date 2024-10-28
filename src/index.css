@@ -1,0 +1,178 @@
+:root {
+  --primary-color: #ff7605; /* Vibrant Coral */
+  --secondary-color: #6b5bff; /* Vibrant Indigo */
+  --accent-color: #ffcc00; /* Bright Yellow */
+  --background-color: #242424;
+  --text-color-light: rgba(255, 255, 255, 0.87);
+  --text-color-dark: #213547;
+  --hover-bg-color: rgba(255, 255, 255, 0.1);
+  --card-bg-color: #2c2c2c; /* Dark Card Background */
+  --button-bg-color: #1a1a1a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Change to column for better layout */
+  align-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: var(--text-color-light);
+  padding: 20px; /* Add some padding */
+}
+
+h1 {
+  font-size: 60px; /* Adjust font size for better scaling */
+  line-height: 1.1;
+  color: var(--primary-color); /* Use primary color for header */
+  margin-bottom: 20px; /* Add some spacing below the header */
+}
+
+/* Input and Select Styles */
+input,
+select {
+  padding: 0.8em; /* Increased padding for better usability */
+  font-size: 1em;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  margin-bottom: 16px; /* Spacing below input */
+  transition: border-color 0.25s;
+  width: 100%; /* Make input and select full width */
+  max-width: 400px; /* Set a maximum width */
+}
+
+input:focus,
+select:focus {
+  border-color: var(--accent-color); /* Highlight border on focus */
+  outline: none;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between user cards */
+  justify-content: center; /* Center the user cards */
+  width: 100%; /* Full width for user list */
+}
+
+.user-card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: 1px solid transparent; /* Ensure border space for hover effect */
+}
+
+.user-card:hover {
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--secondary-color); /* Add border color on hover */
+}
+
+.user-card h3 {
+  margin: 8px 0; /* Spacing for title */
+  color: var(--primary-color); /* Use primary color for user name */
+}
+
+.user-card p {
+  color: var(--text-color-light);
+  margin: 4px 0; /* Spacing for username */
+}
+
+.view-details {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  padding: 0.4em 0.8em;
+  margin-top: 10px; /* Space above the button */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-details:hover {
+  background-color: var(--accent-color); /* Change color on hover */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--secondary-color);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) { /* Tablets and smaller screens */
+  h1 {
+    font-size: 2em; /* Smaller font size for smaller screens */
+  }
+
+  .user-card {
+    width: 100%; /* Make user cards full width on smaller screens */
+    max-width: 320px; /* Maximum width for user cards */
+  }
+
+  input,
+  select {
+    max-width: 100%; /* Full width on small devices */
+    margin-bottom: 16px; /* Consistent margin */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+  h1 {
+    font-size: 1.8em; /* Further reduce font size for small phones */
+  }
+
+  .user-card {
+    width: 100%; /* Full width for mobile */
+    margin: 0 10px; /* Add some horizontal margin */
+  }
+
+  input,
+  select {
+    padding: 0.6em; /* Slightly smaller padding */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: var(--text-color-dark);
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
