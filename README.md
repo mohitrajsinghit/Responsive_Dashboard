@@ -48,21 +48,14 @@ To run the project locally, follow these steps:
 4. Open your browser and go to `http://localhost:3000` to view the application.
 
 ## Deployment
-
-This application will be deployed on Vercel. To deploy:
+Localhost only
+Sorry My project was not showing in vercel , I tried it many times amd in Netlif I have deployed
 
 Here is the link of video demo
 
 https://drive.google.com/file/d/1dNo1t3rqATVlTC8gytwd-4TR9GrJGr98/view?usp=sharing
 
-1. Push your code to a GitHub repository.
-2. Go to [Vercel](https://vercel.com/).
-3. Click on "New Project" and import your GitHub repository.
-4. Follow the prompts to deploy your application.
 
-## Screenshots
-
-![User Dashboard Screenshot](./assets/dashboard_screenshot.png)  <!-- Add your screenshot path here -->
 
 ## License
 
