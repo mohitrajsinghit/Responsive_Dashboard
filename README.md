@@ -51,6 +51,10 @@ To run the project locally, follow these steps:
 
 This application will be deployed on Vercel. To deploy:
 
+Here is the link of video demo
+
+https://drive.google.com/file/d/1dNo1t3rqATVlTC8gytwd-4TR9GrJGr98/view?usp=sharing
+
 1. Push your code to a GitHub repository.
 2. Go to [Vercel](https://vercel.com/).
 3. Click on "New Project" and import your GitHub repository.
